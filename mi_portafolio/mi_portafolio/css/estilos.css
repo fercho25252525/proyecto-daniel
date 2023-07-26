@@ -1,0 +1,485 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #d36262;
+}
+
+button:hover{
+    background-color: #863e3e;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: #d36262;}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 5px;
+    font-weight: bold;
+    color: #d36262;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header .container .container-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+
+header .container .container-logo .icono{
+    height: 50px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #d36262;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#mi-perfil .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#mis-proyectos{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#mis-proyectos .container{
+    padding: 150px 0px;
+}
+
+#mis-proyectos h2{
+    margin: 0px;
+    font-size: 3.2em;
+}
+
+#mis-proyectos p{
+    display: none;
+}
+
+#mis-proyectos a{
+    text-decoration: none;
+    color: white;
+}
+
+#mis-proyectos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    min-width: 33%;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/diana.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/calculadora_presupuesto.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/reloj_calendario.jpg");
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/barberia.jpg");
+}
+
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/lista_personas.jpg");
+}
+
+.carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/calculadora.jpg");
+}
+
+#codigo .container{
+    background-image: url("../img/codigo.svg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+
+
+#contactame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#contactame h2{
+    margin: 0px;
+    font-size: 3.2em;
+    padding-bottom: 100px;
+}
+
+#contactame .redes-iconos{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#contactame p{
+    display: none;
+}
+
+#contactame .redes-iconos .informacion{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#contactame .informacion a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+#contactame .redes-iconos .whatsapp{
+    background-image: url("../img/contactame/whatsapp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#contactame .redes-iconos .correo{
+    background-image: url("../img/contactame/gmail.png");
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: center center;
+}
+
+#contactame .redes-iconos .linkedin{
+    background-image: url("../img/contactame/link.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#contactame .redes-iconos .github{
+    background-image: url("../img/contactame/github.svg");
+    background-repeat: no-repeat;
+    background-size: 88px;
+    background-position: center center;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* responsive */
+
+
+
+
+
+
+
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #mi-perfil .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #mi-perfil .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #mi-perfil h2{
+        margin-top: 0px;
+    }
+
+    #mi-perfil .img-container{
+        background-image: url("../img/descripcion.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    #mis-proyectos .proyectos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-x: calc(3);
+
+    }
+
+    #mis-proyectos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #mis-proyectos h2{
+        margin-top: 0;
+        font-size: 4em;
+    }
+
+    #mis-proyectos .carta{
+        max-width: 20%;
+        padding: 50px;
+        background-size: 100% 180px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/diana.jpg");
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/calculadora_presupuesto.jpg");
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/reloj_calendario.jpg");
+    }
+
+    .carta:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/barberia.jpg");
+    }
+
+    .carta:nth-child(5){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/lista_personas.jpg");
+    }
+
+    .carta:nth-child(6){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/calculadora.jpg");
+    }
+
+
+    #contactame{
+        align-items: center;
+    }
+
+    #contactame .redes-iconos{
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: baseline;
+        /* padding-left: 60px; */
+    }
+
+    #contactame .redes-iconos .informacion{
+        align-items: center;
+    }
+
+    #contactame .redes-iconos a{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #contactame p{
+        display: flex;
+        padding-left: 10px;
+    }
+
+
+
+
+}
